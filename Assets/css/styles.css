@@ -1,7 +1,7 @@
 :root{
     --primary-color: #0A1128;
     --white-color: #fff;
-    --ligth-grey-color: #EEEEEE;
+    --light-grey-color: #EEEEEE;
     --gap: 3rem;
 }
 /*
@@ -32,7 +32,7 @@ font-family: 'Open Sans', sans-serif;
     left: 0;
     right: 0;
     width: 100%;
-    border-bottom: 0.1rem solid var(--ligth-grey-color);
+    border-bottom: 0.1rem solid var(--light-grey-color);
     z-index: 1;
 }
 .menu-content {
@@ -104,12 +104,13 @@ body .full-width{
 }
 .top3-content {
     max-width: 64rem;
-    min-height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
+    min-height: 100vh;
     text-align: center;
-}
+  }
 .grid-one-content {
     min-height: 100vh;
     display: flex;
@@ -184,7 +185,7 @@ body .full-width{
 .form-group input, 
 .form-group textarea {
     border: none;
-    background: var(--ligth-grey-color);
+    background: var(--light-grey-color);
     padding: 1.5rem 2rem;
     width: 100%;
     font-size: 2.5rem;
@@ -263,6 +264,10 @@ body .full-width{
     .grid-one-content {
         display: block;
     }
+    .form-group input, 
+    .form-group textarea {
+    width: 90%; 
+}
     .menu {
         bottom: 0;
         text-align: center;
@@ -292,8 +297,8 @@ body .full-width{
         content: '☰';
         position: fixed;
         z-index: 2;
-        top: 1rem;
-        right: 1rem;
+        top: 2rem;
+        right: 2rem;
         background: var(--primary-color);
         color: var(--white-color);
         font-size: 3rem;
